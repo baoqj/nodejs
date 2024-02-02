@@ -1,4 +1,5 @@
 const http = require("http"); 
+const port = process.env.PORT || 80;
 
 http 
     .createServer(function (req, res) { 
@@ -8,5 +9,5 @@ http
     res.end();
     //end the response 
     }) 
-    .listen(8080);
+    .listen(port);
     //Server runs on localhost:8080 
